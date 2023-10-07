@@ -2221,6 +2221,7 @@ blockquote cite {
 
 /*--------------Resource styling---------------------*/
 .resource-container {
+  position: relative;
   min-height: 100vh;
   background-color: #181818;
   padding-left: 80px;
