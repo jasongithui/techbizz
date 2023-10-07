@@ -29,48 +29,161 @@
 <body>
   <section class="navigation">
     <div class="logos">
-      <div class="logo">
-        <img src="images/logo.png" alt="">
-      </div>
-      <div class="logo2">
-        <img src="images/logo2.png" alt="">
-      </div>
-
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+      
     </div>
     <div class="icons">
-      <nav class="navbar">
-        <a class="line" href="#blogg">OUR BLOG</a>
-        <a class="line line1" href="#jr">OUR JOURNEY</a>
-        <a class="active" href="#contact">GET IN TOUCH</a>
-      </nav>
-      <i class="fas fa-bars" id="menu-bars"></i>
+        <nav class="navbar">
+          <a class="line" href="#blogg">OUR BLOG</a>
+            <a class="line line1" href="#jr">OUR JOURNEY</a>
+            <a class="active" href="#contact">GET IN TOUCH</a>
+        </nav>
+        <i class="fas fa-bars" id="menu-bars"></i>
     </div>
-  </section>
- 
-
- <!-------Hero Section-------->
- <!-------Hero Section-------->
- <section class="hero-section">
-  <img id="layer5" src="./images/hero-section/Layer5.png" alt="">
-  <img id="layer4" src="./images/hero-section/Layer4.webp" alt="">
-  <img id="layer3" src="./images/hero-section/Layer3.png" alt="">
-  <img id="layer2" src="./images/hero-section/Layer2.webp" alt="">
-  <img id="layer1" src="./images/hero-section/Layer1.webp" alt="">
-            <img id="layer7" src="./images/hero-section/Layer7.webp" alt="">
-            <img id="layer8" src="./images/hero-section/Layer8.webp" alt="">
-            <div class="container-fluid text-start">
-              <div class="row" style="margin: auto; width: 100%;">
-                <div class="col-12" style="margin: auto; width: 100%;">
-                  <h1 class="hero-heading">Crafting Your Next<span class="h1-code"> Code</span><br/> in <span class="h1-silicon">Silicon </span> Savannah</h1>
-                  <p class="hero-subheading">Elevate your digital project's success with<br/> our team of highly skilled professionals</p>
-                   <!-- Call to Action Button -->
-        <a href="#" class="cta-button">Get in Touch</a>
-                </div>
-              </div>
-            </div>
-
 </section>
 
+<script>
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+let headerr = document.querySelector('.navigation');
+let logo1 = document.querySelector('.logo img'); // Target the img element within .logo
+let logo2 = document.querySelector('.logo img'); // Target the img element within .logo2
+let logoImages = ['used-images/parallax-images/logo.png', 'used-images/parallax-images/logo.png']; // Array of logo images
+let currentLogoIndex = 0; // Index of the current logo image
+
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+};
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.navigation .navbar a');
+
+window.onscroll = () => {
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+
+    sections.forEach(section => {
+        let top = window.scrollY;
+        let height = section.offsetHeight;
+        let offset = section.offsetTop - 150;
+        let id = section.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('.navigation .navbar a[href*=' + id + ']').classList.add('active');
+            });
+        }
+    });
+
+    // Change logo image and header background color
+    if (window.scrollY > 550) {
+        headerr.style.backgroundColor = 'black';
+    //    header.style.margin = '0px';
+     //   logo1.style.opacity = 0;
+       // logo2.style.opacity = 1;
+    } else {
+        headerr.style.backgroundColor = 'black';
+      //  logo1.style.opacity = 1;
+       // logo2.style.opacity = 0;
+      //  header.style.marginTop = '20px';
+    }
+};
+
+// Change the logo image when clicked
+logo1.addEventListener('click', () => {
+    currentLogoIndex = (currentLogoIndex + 1) % logoImages.length;
+    logo1.src = logoImages[currentLogoIndex];
+});
+
+// Initial setup to hide one of the logos
+logo2.style.opacity = 0;
+logo1.style.opacity = 1;
+
+</script>
+
+<section class="header ">
+ 
+  <div class="image-container">
+  <h2 class="craft fadeInLeft">Crafting Your Next <span class="yellow">Code</span><br> in <span class="africa">Africa</span></h2> 
+   <h3 class="craft3 fadeInRight">Digital Transformation and Engineering Services with Cloud & Data.</h3>
+    <div class="image-box one" onclick="window.location.href='#digital'">
+        <div class="image-caption">
+          <div class="caption-container dev-ops">
+            <i class="fa-solid fa-gears fa-beat-fade caption-icon" style="color: #e8b620;"></i>
+          <h1>DIGITAL SERVICES</h1>
+          <!-----
+          <p>At Techbiz Limited, we specialize in delivering cutting-edge digital services tailored to your unique needs. Our expert team is dedicated to enhancing your online presence, driving organic traffic, and boosting conversions.</p>
+          --> 
+          <i class="fa-solid fa-caret-down fa-bounce" style="color: #fff;"></i>  
+        </div>
+        </div>
+    </div>
+    <h2 data-text="Crafting your Next Code in Africa" class="craft"></h2>
+    <div class="image-box two" onclick="window.location.href='#cloud'">
+        <div class="image-caption">
+          <div class="caption-container dev-ops">
+            <i class="fa-solid fa-cloud fa-beat-fade caption-icon" style="color: #e8b620;"></i>
+            <h1>CLOUD AND AI</h1>
+            <!----
+            <p>We harness the power of Cloud and AI to provide advanced solutions that propel your business forward. Our expertise in Cloud services ensures your data is secure, accessible, and scalable.</p>
+          ---->
+            <i class="fa-solid fa-caret-down fa-bounce" style="color: #fff;"></i>
+          </div>
+        </div>
+    </div>
+    <h2 data-text="Crafting your Next Code in Africa" class="craft"></h2>
+    <div class="image-box three"  onclick="window.location.href='#resource'">
+      
+        <div class="image-caption">
+          <div class="caption-container dev-ops">
+            <i class="fa-solid fa-server fa-beat-fade caption-icon" style="color: #e8b620;"></i>
+           <h1>RESOURCE AUGMENTATION & DEV OPS</h1>
+           <!-----
+            <p>We offer Resource Augmentation services, providing access to a vast pool of skilled professionals across various IT domains. Our DevOps expertise empowers businesses to adopt agile development practices, automate workflows, and achieve rapid, reliable, and efficient software delivery.</p>
+          --->
+            <i class="fa-solid fa-caret-down fa-bounce" style="color: #fff;"></i>
+        </div>
+        </div>
+    </div>
+    <h2 data-text="Crafting your Next Code in Africa" class="craft"></h2>
+    <div class="image-box four"  onclick="window.location.href='#enterprise'">
+      
+     <div class="image-caption">
+      <div class="caption-container dev-ops">
+        <i class="fa-solid fa-cart-shopping fa-beat-fade caption-icon" style="color: #e8b620;"></i>
+        <h1>OUR DIGITAL PRODUCTS</h1>
+        <!-----
+            <p>Our Products are at the heart of our commitment to helping businesses thrive in the digital age. Techbiz Limited offers a diverse portfolio of cutting-edge solutions and services that encompass Digital Services, Cloud and Artificial Intelligence (AI) technologies, Resource Augmentation, DevOps, and Enterprise Solutions.</p>
+        -->
+            <i class="fa-solid fa-caret-down fa-bounce" style="color: #fff;"></i>
+          </div>
+      
+     </div>
+ </div>
+ <h2 data-text="Crafting your Next Code in Africa" class="craft"></h2>
+    <div class="image-box five" onclick="window.location.href='#enterprise'">
+        
+        <div class="image-caption">
+          <div class="caption-container dev-ops">
+            <i class="fa-regular fa-lightbulb fa-beat-fade caption-icon" style="color: #e8b620;"></i>
+            <h1>ENTERPRISE SOLUTIONS</h1>
+            <!-----
+         <p>Our suite of services includes Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Business Intelligence (BI), and more. These solutions are designed to centralize data, automate processes, and facilitate informed decision-making.</p>
+            ---> 
+         <i class="fa-solid fa-caret-down fa-bounce" style="color: #fff;"></i>
+          </div>
+          
+        </div>
+    </div>
+    
+</div>
+
+
+</section>
 
 
 
