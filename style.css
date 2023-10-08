@@ -281,12 +281,12 @@ hr {
 }
 
 .logos .logo img {
-  width: 220px;
-  height: 133px;
+  width: 200px;
+  height: 100px;
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.5s;
-  margin-left: -45px;
+  margin-left: -35px;
 }
 
 .logo2 img {
@@ -972,7 +972,7 @@ position: relative;
 .abt-us-content p {}
 
 .about-us .maasai {
-  width: 85%;
+  width: 80%;
   margin: auto;
   height: 55vh;
 
@@ -1276,6 +1276,7 @@ position: relative;
   left: 0;
   box-shadow: 2px solid gray;
   padding: 30px;
+  margin-left: 25px;
 }
 
 .digital-new .col1 .ui-tip-card .head-row {
@@ -1625,7 +1626,7 @@ video {
 .cloud-banner {
   margin-top: 100px;
   position: relative;
-  width: 92%;
+  width: 90%;
   margin: auto;
   min-height: 40vh;
   padding-top: 100px;
@@ -1658,7 +1659,7 @@ video {
 }
 
 .cloud-card-row {
-  width: 92%;
+  width: 90%;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -2480,7 +2481,7 @@ blockquote cite {
   font-weight: 600;
   padding: 10px;
   text-align: center;
-  border: 1px solid #000;  
+
   border-radius: 15px;
   cursor: pointer;
   
@@ -2523,7 +2524,7 @@ blockquote cite {
   position: relative;
   min-height: 100vh;
   background-color: #181818;
-  padding-left: 80px;
+  padding-left: 95px;
   padding-top: 80px;
 }
 .resource-heading{
@@ -2904,7 +2905,8 @@ textarea.input-field {
   /* background-color: rgb(76, 76, 112); */
   background-color: #181818;
  /* background-color: rgb(28, 67, 150); */
-  font-family: var(--raleway);
+  font-family: var(--pop);
+
 }
 
 .footer .container1 {
@@ -2990,7 +2992,9 @@ textarea.input-field {
   display: none;
 }
 
-
+.copyright span{
+  color: #0DB4D7;
+}
 
 
 /* ANIMATIONS */
