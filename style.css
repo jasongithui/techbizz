@@ -967,15 +967,10 @@ position: relative;
   font-style: normal;
 }
 
-.abt-us-content h1 {}
-
-.abt-us-content p {}
-
 .about-us .maasai {
   width: 80%;
   margin: auto;
   height: 55vh;
-
   background: url("images/d2.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -2561,6 +2556,26 @@ blockquote cite {
 }
 .resource-img img {
   width: 100%;
+}
+/* CSS for the Call to Action Button */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px; /* Adjust padding as needed */
+  background-color: #000; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 18px; /* Button font size */
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: 0.5s ease; /* Smooth background color transition on hover */
+
+  /* Center and align the button */
+  margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.2s ease-out; /* Button background color on hover */
 }
 /*-------------End of Resource Styling---------------*/
 
