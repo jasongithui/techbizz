@@ -2402,7 +2402,6 @@ video {
   font-size: 50px;
 }
 
-
 .actual-quote {
   font-size: 20px;
   margin: 0 0;
@@ -2889,8 +2888,15 @@ textarea.input-field {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-@media (max-width: 770px) {
-
+@media (max-width: 768px) {
+   .image-container h2 {
+    margin-top: 80px;
+    width: 100%;
+    font-size: 15px;
+   }
+   .image-container h3 {
+    margin-top: 60px;
+   }
   .circle {
     display: none;
   }
@@ -2904,6 +2910,9 @@ textarea.input-field {
 
   .quick {
     margin-top: 25px;
+  }
+  .footer .container .row{
+    margin-left: -75px;
   }
 }
 

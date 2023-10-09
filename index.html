@@ -27,6 +27,21 @@
 </head>
 
 <body>
+
+  <div id="preloader">
+    <video id="preloader-video" autoplay muted loop style="width: 40%; height: auto;">
+     <source src="images/pulse.mp4" type="video/mp4">
+   </video>
+   
+   </div>
+
+
+
+
+
+<div class="pageContent" id="pageContent">
+
+
   <section class="navigation">
     <div class="logos">
         <div class="logo">
@@ -38,7 +53,7 @@
         <nav class="navbar">
           <a class="line" href="#blogg">OUR BLOG</a>
             <a class="line line1" href="#jr">OUR JOURNEY</a>
-            <a class="active" href="#contact">GET IN TOUCH</a>
+            <a class="active contact-btn" href="#contact">GET IN TOUCH</a>
         </nav>
         <i class="fas fa-bars" id="menu-bars"></i>
     </div>
@@ -191,15 +206,7 @@ logo1.style.opacity = 1;
   <!--ABOUT US-->
   <div class="about-us" style=" margin-top:  0px;">
 
-    <div class="row">
-      <div class="col-md-6"> </div>
-      <div class="col-md-6">
-        <div class="section-title abt-title">
-          <h1 class="wow fadeInRight" style="margin: 0;">ABOUT US</h1>
-          <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #0DB4D7; width: 100px;">
-        </div>
-      </div>
-    </div>
+    
 
     <div class="row first-row" style="width: 96%; margin: auto;">
       <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
@@ -207,6 +214,10 @@ logo1.style.opacity = 1;
         <div class="container-fluid maasai" style="padding: 40px;"> </div>
       </div>
       <div class="col-md-6 wow fadeInRight firr">
+        <div class=" abt-title" style="">
+          <h1 class="wow fadeInRight" style="margin: 0;">ABOUT US</h1>
+          <hr style="margin: 0 10px; border: 1px solid  #0DB4D7; color: #0DB4D7; width: 100px;">
+        </div>
         <div class="section-title abt-us-content">
           <h1 style="">Your Digital Partner</h1>
           <p style="">In an ever-evolving business landscape, digital
@@ -231,7 +242,17 @@ logo1.style.opacity = 1;
       </div>
  
     <div class="col-md-6  wow fadeIn">
-      <div class="bus container-fluid" style="padding: 40px;"> </div>
+     <div class="bus container-fluid" style="padding: 40px;"> </div> 
+    
+   <!--  <div class="journey-video-wrapper">
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="images/map.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+ -->
+
+
     </div>
     </div>
    
@@ -245,11 +266,7 @@ logo1.style.opacity = 1;
   
   <!----------------------------------NEW DIGITAL SERVICES----------------------------------->
   <div class="digital-new" style="background-color: #f8f8f8; padding-bottom: 100px;">
-    <div class="custom-shape-divider-top-1696526545">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-      </svg>
-  </div>
+  
     
     <div class="row" style="width: 87%; margin: auto;">
       <div class="col1 digital-left-img col-md-6">
@@ -291,7 +308,7 @@ logo1.style.opacity = 1;
         </div>
         <div class="section-title" >
 
-          <h3 style="text-align: left;">Transforming Visions into Reality</h3>
+          <h3 style="">Transforming Visions into Reality</h3>
                <p style="color: #555555;">Transforming your ideas into high-quality digital solutions. Our experts focus on creativity and technical expertise to exceed your expectations.</p>
 
       
@@ -359,22 +376,6 @@ logo1.style.opacity = 1;
 
   
   <!-------------------------END OF DIGITAL SERVICES------------------->
- 
-  
-  <!-- CLOUD AND AI 
-   
-
-   <div class="cloud-video-wrapper">
-    <video playsinline autoplay muted loop poster="cake.jpg">
-      <source src="https://vitalrecordscontrol.com/wp-content/uploads/2021/09/Hero-Small-Green.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  
-    <div class="cloud-vid">
-    
-    </div>
-  </div>
--->
 
 <section class="cloud-bg">
   <div class="cloud-main panel" style="margin-top: 70px;">
@@ -492,7 +493,8 @@ logo1.style.opacity = 1;
 
 
   <!------------------Resource Augmnetation-->
-  <section class="container-fluid resource-container">
+  <section class="container-fluid resource-container" style="padding-bottom: 50px;">
+    
     <div class="row">
       <div class="section-title" style=" display: flex; align-items: center; justify-content: center;">
         <h1 class="wow fadeInRight" style="margin: 0;">RESOURCE AUGMENTATION AND DEVOPS</h1>
@@ -540,7 +542,11 @@ logo1.style.opacity = 1;
           </div>
         </div>
     </div>
-        
+    <div class="custom-shape-divider-bottom-1696781530">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
   </section>
   
 
@@ -608,21 +614,13 @@ logo1.style.opacity = 1;
                 quia, consequatur officiis?</p>
             </div>
             <div class="row" >
-             
-              <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p> Available Anytime</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p>Multi-Branch Capable</p>
-                  </div>
-                </div>
-
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p> Available Anytime</p>
+              </div>
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p>Multi-Branch Capable</p>
               </div>
              
               <div class="d-flex align-items-center check-mark">
@@ -652,21 +650,13 @@ logo1.style.opacity = 1;
                 quia, consequatur officiis?</p>
             </div>
             <div class="row" >
-             
-              <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p> Precise</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p> Empower your people</p>
-                  </div>
-                </div>
-
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p> Precise</p>
+              </div>
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p> Empower your people</p>
               </div>
              
               <div class="d-flex align-items-center check-mark">
@@ -699,21 +689,13 @@ logo1.style.opacity = 1;
             </div>
          
             <div class="row" >
-             
-              <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p> Empathy-Driven Design</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="d-flex align-items-center check-mark">
-                    <img src="images/check-mark.png" alt="" >
-                    <p>  Clarity and Simplicity</p>
-                  </div>
-                </div>
-
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p> Empathy-Driven Design</p>
+              </div>
+              <div class="d-flex align-items-center check-mark">
+                <img src="images/check-mark.png" alt="" >
+                <p>  Clarity and Simplicity</p>
               </div>
              
               <div class="d-flex align-items-center check-mark">
@@ -733,16 +715,16 @@ logo1.style.opacity = 1;
         <div class="photos">
           <div class="photos-box">
             <div class="photo red">
-           <img src="https://deveb.co/static/media/vim.2c5e9ce4.jpg" />  
-             <!--   <img src="images/PRODUCTS/47-payday.png" alt="" srcset=""> -->
+             <!-- <img src="https://deveb.co/static/media/vim.2c5e9ce4.jpg" />  -->
+             <img src="images/payday.png" alt="" srcset="" class="img-fluid">
             </div>
             <div class="photo green">
              <!--  <img src="https://deveb.co/static/media/newdopegood.6e57b4b4.jpg" />  -->
-             <img src="images/PRODUCTS/47-crm.png" alt="" srcset="">
+             <img src="images/crm.png" alt="" srcset="">
             </div>
             <div class="photo blue">
              <!--   <img src="https://deveb.co/static/media/am-arc.0bba8786.jpg" />  -->
-             <img src="images/PRODUCTS/47-pro.png" alt="" srcset="">
+             <img src="images/47pro.png" alt="" srcset="">
             </div>
 
           </div>
@@ -847,10 +829,12 @@ logo1.style.opacity = 1;
         <img src="images/PARTNERS2/NTSA.png " alt="" srcset="" class="box ">
         <img src="images/PARTNERS2/PAR.png" alt="" srcset="" class="box ">
         <img src="images/PARTNERS2/POR.jpg" alt="" srcset="" class="box ">
-        <img src="images/PARTNERS2/TR.png " alt="" srcset="" class="box tr" style="height: 110px; padding-top: 15px; padding-bottom: 15px;">
-        <img src="images/PARTNERS2/VIPINGO.png" alt="" srcset="" class="box vipingo" style="height: 110px;padding-top: 15px; padding-bottom: 15px;">
-     
-       
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/PARTNERS2/TR.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/PARTNERS2/VIPINGO.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
       </div>
     </div>
     <div class="section-title" style=" ">
@@ -860,7 +844,9 @@ logo1.style.opacity = 1;
 
     <div id="no03" class="wrapper wrapper2" style="margin-top: -50px; margin-bottom: 50px;">
       <div class="boxes">
-        <img src="images/TECH-STACKS/flutter.png" alt="" srcset="" class="box box2">
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/TECH-STACKS/flutter.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
         <img src="images/TECH-STACKS/html.png" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/java.png" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/css.png" alt="" srcset="" class="box box2">
@@ -869,10 +855,19 @@ logo1.style.opacity = 1;
         <img src="images/TECH-STACKS/microsoft.png" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/php.png" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/python.png" alt="" srcset="" class="box box2">
-        <img src="images/TECH-STACKS/sql.png" alt="" srcset="" class="box box2">
-        <img src="images/TECH-STACKS/laravel.png" alt="" srcset="" class="box box2">
-        <img src="images/TECH-STACKS/power bi.png" alt="" srcset="" class="box box2">
-        <img src="images/TECH-STACKS/oracle.png" alt="" srcset="" class="box box2">
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/TECH-STACKS/sql.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
+       
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/TECH-STACKS/laravel.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/TECH-STACKS/power bi.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
+        <div class="box" style="display: flex; justify-content: center; align-items: center;">
+          <img src="images/TECH-STACKS/oracle.png" alt="" srcset="" class="img-fluid " style="display: flex; justify-content: center; align-items: center;">
+        </div>
         <img src="images/TECH-STACKS/boostrap.svg" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/react.png" alt="" srcset="" class="box box2">
         <img src="images/TECH-STACKS/next.png" alt="" srcset="" class="box box2">
@@ -1091,7 +1086,7 @@ logo1.style.opacity = 1;
 
     </div>
     <div class="container  container2">
-      <div class="copyright ">
+      <div class="copyrightt ">
         <div class="row" style="margin-top: 20px; padding-bottom: 20px; margin-left: 0;">
           <div class="copyright" style="text-align: center; padding: 10px;">
             <a href="#">&COPY; <span>2023 Techbiz Limited</span></a>
@@ -1104,6 +1099,9 @@ logo1.style.opacity = 1;
 
   </div>
   <!-- Footer End -->
+
+</div>
+
 
 
 <script src="js/index.js"></script>
@@ -1135,7 +1133,12 @@ logo1.style.opacity = 1;
   <script>
     window.onload = () => {
       console.log('Gsap works')
+      var preloader = document.getElementById("preloader");
+ var content = document.getElementById("pageContent");
 
+ // Hide preloader and show content
+preloader.style.display = "none";
+content.style.display = "block";
       let details = gsap.utils.toArray('.details')
       let props = gsap.getProperty('#id', 'backgroundColor')
 
