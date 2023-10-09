@@ -504,7 +504,8 @@ width: 100%;
 position: absolute;
 top: 35%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%); 
+
 z-index: 5;
 font-size: 61px; 
 letter-spacing: 5px;
@@ -517,7 +518,7 @@ text-transform: uppercase;
 pointer-events: none;
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-width: 60%;
+width: 70%;
 position: absolute;
 top: 55%;
 left: 50%;
@@ -1118,6 +1119,12 @@ position: relative;
 
 }
 
+@media (min-width : 1400px) {
+  .about-us .maasai, .about-us .bus {
+   max-height:30vh;
+  }
+
+}
 @media (min-width : 768px){
   .about-us .bus{
     background-attachment: fixed;
@@ -1565,9 +1572,16 @@ position: relative;
   background-color: #0DB4D7;
   background-image: url("images/Cloud\ and\ AI.webp");
   background-size: cover;
-  background-attachment: fixed;
+  
   border-radius: 15px;
 }
+
+@media (mIN-width : 768px){
+  .cloud-banner {
+    background-attachment: fixed;
+  }
+}
+
 
 
 .clouds {
@@ -2089,7 +2103,7 @@ position: relative;
   background: transparent;
 }
 .d3{
-  height: 100vh;
+  height: 80vh;
 }
 .right {
   outline: 1px solid purple;
