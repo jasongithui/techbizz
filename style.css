@@ -502,9 +502,10 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 300;
 width: 100%;
 position: absolute;
-top: 35%;
+/*top: 35%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);  */
+top: 25%;
 z-index: 5;
 font-size: 61px; 
 letter-spacing: 5px;
@@ -517,11 +518,13 @@ text-transform: uppercase;
 pointer-events: none;
 font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-width: 60%;
+width: 70%;
 position: absolute;
-top: 55%;
+/* top: 55%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);  */
+top: 53%;
+left: 15%;
 z-index: 5;
 font-size: 25px; 
 letter-spacing: 5px;
@@ -1110,10 +1113,15 @@ position: relative;
 
 
 
-
-@media (min-width : 2160px) {
+@media (min-width : 2060px) {
   .about-us .maasai, .about-us .bus {
    max-height:20vh;
+  }
+
+}
+@media (min-width : 1460px) {
+  .about-us .maasai, .about-us .bus {
+   max-height:30vh;
   }
 
 }
@@ -2413,7 +2421,7 @@ blockquote cite {
 
 .technologies .wrapper .box {
   position: absolute;
-  width: 120px;
+  width: 150px;
   height: 100px;
   
   color: black;

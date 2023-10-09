@@ -1,0 +1,65 @@
+[33mcommit fe4714f320d2ed246bc5ea8cabdeccb746939ba0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Mon Oct 9 09:54:17 2023 +0300
+
+    added files
+
+[33mcommit f9ee9191e4f1264fe19ca123b5cbac3151231a0d[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Mon Oct 9 09:51:29 2023 +0300
+
+    added html
+
+[33mcommit ca42e95e96f87266e98abe2cc550b96696b7a51f[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sun Oct 8 15:32:28 2023 +0300
+
+    style cta button
+
+[33mcommit 1b9d94a8ecb3783424d33af2050c3e65c55a6719[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sun Oct 8 15:06:34 2023 +0300
+
+    add padding to footer
+
+[33mcommit 241afc98f03e6e91db4a5f33a52460e1ae496ab1[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sun Oct 8 14:34:26 2023 +0300
+
+    changed margin across page
+
+[33mcommit b418a8b0d445fa5d833c9324e066f4024ec3d04f[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sat Oct 7 10:51:31 2023 +0300
+
+    add hero
+
+[33mcommit 264b26aaf0a11fd851415ed1d8d842c0ab8e1f6c[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sat Oct 7 09:40:57 2023 +0300
+
+    rm svg
+
+[33mcommit e9501ad02b7a24b24ca78bb2699d9386d3f4c0f8[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sat Oct 7 09:25:40 2023 +0300
+
+    add containe-fluid in resource
+
+[33mcommit 6e1974c8e541584e6a4bb10f2c59a92084db5f90[m
+Author: Jason Githui <jasongithui@gmail.com>
+Date:   Sat Oct 7 09:21:45 2023 +0300
+
+    add resource img
+
+[33mcommit 2cb490f00329d2c76aff2ead24f9b1eb5ad74c16[m
+Author: Jason Githui <60644831+jasongithui@users.noreply.github.com>
+Date:   Sat Oct 7 08:59:24 2023 +0300
+
+    Add files via upload
+
+[33mcommit 21b174ed692f05029f25ace9bb0d4be9696b0abf[m
+Author: Jason Githui <60644831+jasongithui@users.noreply.github.com>
+Date:   Sat Oct 7 08:52:05 2023 +0300
+
+    Initial commit
